@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eccc2977-9561-4cc8-a5aa-62a82a969472/deploy-status)](https://app.netlify.com/sites/unitodo-app/deploys)
+
 # Frontend Mentor - Todo app
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
