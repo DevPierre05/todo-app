@@ -10,7 +10,7 @@ import './App.css'
 
 function App() {
   const [theme, setTheme] = useState(() => JSON.parse(localStorage.getItem("theme")) || false);
-  const [todos, setTodos] = useState(data)
+  const [todos, setTodos] = useState(() => JSON.parse(localStorage.getItem("todos")) || data)
   const [filteredStatus, setFilteredStatus] = useState("all")
   const [filteredTodos, setFilteredTodos] = useState(todos)
   const [leftToDo, seLeftToDo] = useState(0)
@@ -37,6 +37,7 @@ function App() {
   useEffect(() => {
     const uncompleted = todos.filter(todo => !todo.completed)
     seLeftToDo(uncompleted.length)
+    localStorage.setItem("todos", JSON.stringify(todos))
   },[todos])
 
   useEffect(() => {
