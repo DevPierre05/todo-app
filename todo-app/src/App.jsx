@@ -135,9 +135,20 @@ function App() {
     <div className="min-h-screen md:bg-[url('./images/bg-desktop-light.jpg')] md:dark:bg-[url('./images/bg-desktop-dark.jpg')] dark:bg-veryDarkBlue dark:bg-[url('./images/bg-mobile-dark.jpg')] bg-[url('./images/bg-mobile-light.jpg')] bg-veryLightGray bg-no-repeat bg-contain py-20">
       <div className="max-w-2xl mx-auto min-h-full px-4">
         <Header theme={theme} handleSwitch={handleSwitch} />
-        <TodoInputForm submit={submit} handleChange={handleChange} formData={formData}/>
-        <TodoList todoActivity={todoActivity()} leftToDo={leftToDo} handleClick={handleClick}
-        filteredStatus={filteredStatus} clearCompleted={clearCompleted}/>
+        <main>
+          <TodoInputForm
+            submit={submit}
+            handleChange={handleChange}
+            formData={formData}
+          />
+          <TodoList
+            todoActivity={todoActivity()}
+            leftToDo={leftToDo}
+            handleClick={handleClick}
+            filteredStatus={filteredStatus}
+            clearCompleted={clearCompleted}
+          />
+        </main>
         <Footer />
       </div>
     </div>

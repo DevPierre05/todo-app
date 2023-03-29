@@ -1,7 +1,7 @@
 
 const Header = function (props) {
   return (
-    <div className="flex justify-between items-center py-5 ">
+    <header className="flex justify-between items-center py-5 ">
       <h1 className="font-extrabold text-4xl dark:text-white text-white tracking-widest">
         TODO
       </h1>
@@ -36,7 +36,7 @@ const Header = function (props) {
           </svg>
         )}
       </div>
-    </div>
+    </header>
   );
 };
 
